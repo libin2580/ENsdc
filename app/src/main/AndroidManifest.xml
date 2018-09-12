@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="meridian.com.etsdcapp">
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="meridian.com.etsdcapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="meridian.com.etsdcapp.permission.C2D_MESSAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        tools:replace="android:icon,android:theme,android:label,android:name"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/apps_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:overrideLibrary="com.github.sundeepk.compactcalendarview"
+       >
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".library.VideoActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:label=" "
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course.MainCoursesActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course.SubCoursesActivity1"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.GuestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gallery.GalleryActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gallery.GalleryDetailActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course.CourseRegistrationActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".library.LibraryActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".library.PdfViewActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.CalendarRegisteredCoursesActivity1"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course.CourseEnquireActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.AboutUsActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.ContactUsActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".notif.Notification"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.FeedBackActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgotPassword"
+            android:label=" " />
+        <activity
+            android:name=".sidebar.ChangePassword"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".schedule.CalendarActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".course.CourseDetailActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroScreenActivity"
+            android:label=" "
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".gcm.RegistrationIntentService"
+            android:exported="false" />
+        <service
+            android:name=".gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.codepath.gcmquickstart" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".gcm.GcmMessageHandler"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".schedule.Schedule1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.RegNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".cart.CartActivityNews"
+            android:label=" "
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gallery.GalleryDtls"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.ContactUsActivity1"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sidebar.MapsActivity2"
+            android:label="@string/title_activity_maps2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#ffffff</item>
+        <item name="colorAccent">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="windowActionBarOverlay">false</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+
+    </style>
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">#FFFFFF</item>
+    </style>
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/roboto.light.ttf</item>
+
+    </style>
+   <style name="Theme.Custom" parent="AppTheme.NoActionBar">
+    <item name="android:calendarViewStyle">@style/Widget.CalendarView.Custom</item>
+</style>
+
+<style name="Widget.CalendarView.Custom" parent="android:Widget.CalendarView">
+<item name="android:selectableItemBackground">@color/Orange</item>
+<item name="android:weekNumberColor">@color/White</item>
+    <item name="android:headerDayOfMonthTextAppearance" tools:targetApi="lollipop">@color/mnthclr</item>
+    <item name="android:dayOfWeekBackground" tools:targetApi="lollipop">@color/White</item>
+
+</style>
+    <color name="black">#ffffff</color>
+
+    <color name="whitegrey">#10315a</color>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+
+        <item name="@android:background">@color/black</item>
+        <item name="@android:textColor">@color/whitegrey</item>
+
+    </style>
+    <style name="dialogs" parent="@android:style/Theme.Holo.Dialog">
+
+        <item name="@android:windowBackground">@color/whitegrey</item>
+        <item name="@android:textColor">@color/whitegrey</item>
+        <item name="android:topBright">@color/butnbakcolr</item>
+        <item name="android:topDark">@drawable/buttonbackgrnd</item>
+
+
+    </style>
+
+
+</resources>

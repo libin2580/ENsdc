@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/lin"
+    android:layout_margin="@dimen/_10sdp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_notif_date"
+            android:textColor="@color/White"
+           android:layout_gravity="right"
+            android:padding="@dimen/_5sdp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="\u2022 \t\tLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. "
+android:id="@+id/txt_not"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/White"
+            android:layout_height="wrap_content"
+            android:background="@color/boxtrans"/>
+
+
+</LinearLayout>

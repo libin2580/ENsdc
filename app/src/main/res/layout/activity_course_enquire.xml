@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_tops"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:background="@color/actionbar_opacity"
+
+        android:navigationIcon="@color/White"
+        app:theme="@style/ToolbarStyle"
+
+
+
+        >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Details"
+                android:layout_gravity="center"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/toolbar_CRCNAM" />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/flag"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/imgebglayer" />
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:id="@+id/imgcrcenq"
+
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/txtcrcenq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="Approved Courses"
+                android:textColor="@color/White"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgcrcenq"
+                android:layout_toEndOf="@+id/imgcrcenq"
+                android:layout_marginStart="18dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingLeft="@dimen/_20sdp"
+
+        android:background="@drawable/homescreenbuttonbig"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOSIET"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/txtsubenq" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Basic Offshore Safety Induction Emergency Training)"
+            android:textColor="@color/White"
+            android:id="@+id/txt_descr" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+        >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#80000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:text="Duration -"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:id="@+id/txt_dur" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#80000000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:text="Validity -"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:id="@+id/txt_val"/>
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enquiry"
+            android:textColor="@color/WhiteSmoke"
+            android:paddingLeft="@dimen/_20sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+
+            android:id="@+id/textView12" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="start"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/crcd"
+            android:id="@+id/edt_enq"
+            android:textColor="@color/White"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <Button
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/but_courseenq"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="#10315a"
+            android:textColor="@color/White"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    <ProgressBar android:id="@+id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="gone" android:indeterminateDrawable="@drawable/my_wheel" android:layout_centerInParent="true" />
+
+</RelativeLayout>

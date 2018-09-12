@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+  >
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:textColor="@color/GhostWhite"
+            android:textSize="@dimen/_13sdp"
+            android:padding="@dimen/_20sdp"
+            android:id="@+id/txtal"
+            android:textAppearance="@style/TextAppearance.FontPath"
+           android:layout_marginTop="@dimen/_25sdp"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="start"
+            android:textAlignment="textStart"
+            android:text="The Centre is situated in Abu Dhabi's Mussafah Industrial Area and has an easy access to the sea, which enables us to carry out our Lifeboat and Fast Rescue Boat trainings in a real environment, which makes us the only training centre that can run these trainings in the GCC.\n\nETSDC has a dedicated Fire Fighting and Escape training facility, as well as two indoor pools in which we run our HUET [Helicopter Underwater Escape Training] and other Offshore trainings.\n\nWe have several fully furnished classrooms for trainees, additional three changing rooms and a large dining area.The Centre is situated in Abu Dhabi's Mussafah Industrial Area and has an easy access to the sea, which enables us to carry out our Lifeboat and Fast Rescue Boat trainings in a real environment, which makes us the only training centre that can run these trainings in the GCC."/>
+
+
+       </ScrollView>
+
+</LinearLayout>

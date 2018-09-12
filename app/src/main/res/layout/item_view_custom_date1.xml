@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/view_date_indicator2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp" android:gravity="center"
+        android:layout_below="@+id/mnths"
+        android:id="@+id/rel"
+        android:layout_gravity="center"
+     >
+
+        <TextView
+            android:id="@+id/tv_date_picker_day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/date_custom_item_day"
+            android:textSize="1sp"
+            android:visibility="invisible"
+            android:textStyle="bold"
+            tools:text="12"/>
+
+        <TextView
+            android:id="@+id/tv_date_picker_day_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_above="@id/tv_date_picker_day"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/date_item_day_name"
+            tools:text="Monday"/>
+
+        <TextView
+            android:id="@+id/tv_date_picker_month_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+           android:gravity="center"
+       android:textStyle="normal"
+
+            android:textAllCaps="true"
+            android:layout_below="@id/tv_date_picker_day"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/date_item_month_name"
+      />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

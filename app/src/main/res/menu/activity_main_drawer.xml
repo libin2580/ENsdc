@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/g1" android:checkableBehavior="single"  >
+        <item
+            android:id="@+id/menuItem1"
+            android:icon="@drawable/ic_home_white_18dp"
+            android:title="About Us"
+            />
+    </group>
+    <group android:id="@+id/g2" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menuItem2"
+
+            android:icon="@drawable/ic_feedback_white_18dp"
+            android:title="Feedback"
+
+            />
+    </group>
+
+    <group android:id="@+id/g3" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menuItem3"
+            android:icon="@drawable/ic_person_outline_white_18dp"
+            android:title="Contact Us"  />
+    </group>
+
+    <group android:id="@+id/g4" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menuItem4"
+            android:icon="@drawable/ic_place_white_18dp"
+            android:title="Map"
+            />
+    </group>
+    <group android:id="@+id/g5" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menuItem5"
+            android:icon="@drawable/changepswdicon"
+            android:title="Change Password"
+            />
+    </group>
+    <group android:id="@+id/g6" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menuItem6"
+            android:icon="@drawable/signout"
+            android:title="Log Out"
+            />
+    </group>
+
+    <group android:id="@+id/g7" android:checkableBehavior="single" >
+        <item
+            android:id="@+id/menuItem7"
+            android:icon="@drawable/ic_star_border_white_18dp"
+            android:title="Rate This App"
+            />
+    </group>
+
+
+
+
+
+</menu>

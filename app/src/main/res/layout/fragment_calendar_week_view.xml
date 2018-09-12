@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:datepicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/schdulebackg">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_tops_calendr"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:background="@color/actionbar_opacity"
+
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedules"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+
+            android:id="@+id/textmnth"/>
+    </LinearLayout>
+
+
+    <pl.rspective.pagerdatepicker.view.DateRecyclerView
+        android:id="@+id/date_list"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+
+
+
+        />
+
+    <!--<pl.rspective.pagerdatepicker.view.DateRecyclerView-->
+    <!--android:id="@+id/date_list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:background="#ff343434"-->
+    <!--datepicker:date_start="02-12-2000"-->
+    <!--datepicker:date_end="01-10-2020"-->
+    <!--datepicker:default_day_selection="10-06-2015"/>-->
+
+    <meridian.com.etsdcapp.schedule.NonSwipeableViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@id/date_list" />
+    <Button
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/regsch"
+        android:layout_gravity="center"
+        android:padding="@dimen/_5sdp"
+
+        android:background="#10315a"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:textColor="@color/White"
+        android:paddingBottom="@dimen/_15sdp"
+        android:textColorHint="@color/White"
+        android:text="Registered Course"
+        />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_topcrt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:background="@color/actionbar_opacity"
+
+        android:navigationIcon="@color/White"
+        app:theme="@style/ToolbarStyle"
+
+
+
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CART"
+                android:layout_gravity="center"
+                android:textColor="@color/White"
+
+                android:id="@+id/toolbar_CRCNAM" />
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        android:shrinkColumns="0"
+        android:stretchColumns="0"
+        android:id="@+id/tablcart"></TableLayout>
+</ScrollView>
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="#10315a"
+            android:textColor="#ffffff"
+            android:text="Book Now"
+
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/but_chkout" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

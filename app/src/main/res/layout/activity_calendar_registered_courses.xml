@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:background="@drawable/schdulebackg"
+android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_topsch"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:background="@color/actionbar_opacity"
+
+        android:navigationIcon="@color/White"
+        app:theme="@style/ToolbarStyle"
+
+
+
+        >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedules"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_12sdp"
+
+
+                android:id="@+id/toolbar_CRCNAM" />
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:background="#6ca1ba"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+
+    android:id="@+id/linearLayoutprevbutton"
+
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <ImageButton
+        android:layout_width="0dp"
+
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#6ca1ba"
+
+        android:src="@drawable/arrow_left"
+        android:id="@+id/prev_button" />
+
+
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:paddingLeft="66dp"
+        android:paddingRight="66dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="January 2016"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textViewcal" />
+
+
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:background="#6ca1ba"
+
+        android:src="@drawable/arrow_right"
+        android:id="@+id/next_button" />
+</LinearLayout>
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:paddingTop="500dp"
+        android:paddingLeft="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="@color/trans"
+        app:compactCalendarTextColor="#ffffff"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="@color/Orange"
+        app:compactCalendarCurrentDayBackgroundColor="#bf000000"
+/>
+
+    <LinearLayout
+    android:background="@color/actionbar_opacity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+        android:layout_weight="1"
+
+    android:id="@+id/linearLayout2"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+android:layout_gravity="center"
+        android:gravity="center"
+android:layout_marginTop="@dimen/_2sdp"
+        android:text="Course"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_15sdp"
+       />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/tabl_sch"></TableLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+

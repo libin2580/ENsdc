@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="9"
+
+    tools:context=".sidebar.AboutUsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_topa"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+
+        android:navigationIcon="@color/White"
+        app:theme="@style/ToolbarStyle"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/toolbar_title" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+android:background="@color/actionbar_opacity"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+           android:background="@drawable/stcw"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+     android:paddingBottom="@dimen/_2sdp"
+      android:background="@drawable/layergray"
+     >
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/logohighres"/>
+        <TextView
+            android:layout_width="272dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/White"
+              android:id="@+id/txtabtit"
+            android:padding="@dimen/_10sdp"
+            android:text="Emirates Technical and Safety Development Centre (ETSDC)"
+            android:textSize="@dimen/_12sdp"
+
+            android:layout_weight="1.13" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="fill_parent"
+            android:textSize="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:text="Established in 1994 as a purpose-built training centre, specialising in safety training for the oil and gas and marine industries.ETSDC is a leading Middle East specialist in providing world class Safety training to global and regional approved standards.The Centre is situated in Abu Dhabi's Mussafah Industrial Area and has easy access to the sea, which enables us to carry out our lifeboat and fast rescue boat trainings in a real environment, which makes us the only training centre that can run these training in the GCC.\n\n ETSDC has a dedicated fire fighting and escape training facility, as well as indoor pools in which we run our HUET [Helicopter Underwater Escape Training] and other offshore trainings.We have several high furnished classrooms for trainees, in addition to Three changing rooms,Two Dining Halls and Two Swimming Pools."
+            android:padding="@dimen/_14sdp"
+style="@style/TextAppearance.FontPath"
+            android:textAlignment="gravity"
+            android:textColor="@color/White"
+            android:id="@+id/txt_abt" />
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".login.GuestActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_minus1sdp"
+        android:layout_weight="2"
+        android:gravity="center"
+
+        >
+
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logohighres"
+
+
+    />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_minus1sdp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        <EditText
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/edt_guest"
+            android:inputType="text"
+        android:gravity="center"
+     android:hint="Email/mobile"
+            android:fontFamily="sans-serif-light"
+            android:textColorHint="@color/White"
+            android:background="@drawable/username_field"
+            android:layout_weight="0.79" />
+
+        <Button
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="#10315a"
+            android:text="LOGIN"
+            android:textColor="#fffafa"
+            android:id="@+id/but_guest" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Skip >"
+            android:id="@+id/txt_skip"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/White"
+            android:fontFamily="sans-serif-light"
+            android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

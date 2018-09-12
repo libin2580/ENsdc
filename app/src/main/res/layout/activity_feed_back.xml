@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_tops"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            android:background="@color/actionbar_opacity"
+
+            android:navigationIcon="@color/White"
+            app:theme="@style/ToolbarStyle"
+
+
+
+            >
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback"
+                android:layout_gravity="center"
+                    android:textColor="@color/White"
+                android:textSize="@dimen/_15sdp"
+
+                    android:id="@+id/toolbar_CRCNAM" />
+
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/logohighres"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+       android:paddingTop="@dimen/_10sdp"
+
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/White"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/trans"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/White"
+            android:id="@+id/nam" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:text="Email"
+            android:textColor="@color/White"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/_40sdp"
+            android:textColor="@color/White"
+            android:paddingLeft="@dimen/_10sdp"
+            android:background="@color/trans"
+            android:textSize="@dimen/_12sdp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/emal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Message"
+
+            android:textColor="@color/White"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:inputType="textMultiLine"
+            android:textSize="@dimen/_12sdp"
+         android:paddingLeft="@dimen/_10sdp"
+            android:background="@color/trans"
+            android:textColor="@color/White"
+            android:gravity="top"
+            android:id="@+id/msg" />
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_15sdp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="SUBMIT"
+            android:id="@+id/but_feed"
+            android:textColor="@color/White"
+            android:background="#10315a"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<ProgressBar android:id="@+id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:visibility="gone" android:indeterminateDrawable="@drawable/my_wheel" android:layout_centerInParent="true" />
+
+    </RelativeLayout>

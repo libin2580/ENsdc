@@ -1,0 +1,25 @@
+<resources>
+    <string name="apps_name">ETSDC</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="action_settings">Settings</string>
+    <string name="imgtext">Emirates Technical and Safety Development Centre</string>
+    <string name="title_activity_home_drawer">HomeDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_main_activitys">MainActivitys</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="start">start</string>
+    <string name="next">next</string>
+    <string name="and">Emirates Technical  \u0026 Safety Development Centre</string>
+
+    <string name="gcm_defaultSenderId">146864267273</string>
+    <string name="clr">146864267273</string>
+    <string name="search_hint">Search</string>
+    <string name="title_activity_maps2">Map</string>
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:weightSum="9"
+
+    tools:context=".sidebar.AboutUsActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_topc"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/trans"
+
+        android:navigationIcon="@color/White"
+        app:theme="@style/ToolbarStyle"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/toolbar_title" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+          android:gravity="center"
+          >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp"
+
+                >
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="vertical"
+
+         android:layout_marginRight="@dimen/_5sdp"
+              android:gravity="center"
+                android:background="@color/boxtrans"
+                android:id="@+id/lay_tel">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/cal"
+                    android:id="@+id/img_tel" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tel"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_gravity="center"
+                android:textColor="@color/White"
+          android:paddingTop="@dimen/_5sdp"
+                android:text="+971-2-555-2034"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/boxtrans"
+                android:id="@+id/lay_fax">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fax"
+                    android:id="@+id/img_fax" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fax"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/White"/>
+            </LinearLayout>
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:layout_gravity="center"
+                    android:paddingTop="@dimen/_5sdp"
+                android:text="+971-2-55-47717"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp"
+
+                >
+                <LinearLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:orientation="vertical"
+
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:background="@color/boxtrans"
+                    android:id="@+id/lay_eml">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/email"
+                        android:id="@+id/img_eml" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/White"/>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/White"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="enquiry@etsdc.com"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+            <LinearLayout
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:orientation="vertical"
+                android:gravity="center"
+android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/boxtrans"
+                android:id="@+id/lay_wats">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/watsap"
+                    android:id="@+id/img_wats" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:padding="@dimen/_5sdp"
+                    android:text="Whatsapp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="+971-52-9605389"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/White"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/trans"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to find us"
+android:paddingBottom="@dimen/_5sdp"
+            android:textColor="@color/White"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:text="6th Street, Corniche Road,"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:text="Mussafah Industrial Area, P.O. Box 35450"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:text="Abu Dhabi, United Arab Emirates"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".sidebar.ContactUsActivity1" />
+    </LinearLayout>
+
+</LinearLayout>
+
